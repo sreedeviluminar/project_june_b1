@@ -25,3 +25,7 @@ void main() {
   print("I am $age yrs old");
   print("I have $cgpa cgpa in my graduation");
 }
+
+///to run tis program in vscode
+/// cd bin
+/// dart run filename.dart
