@@ -1,17 +1,19 @@
 //main function / built in function
 void main(){
 func1();
-func2(10, 20);
+func2(4,8);
 /// function 3 and 4 can be call in 2 different ways
 print(func3());
 //    or
-int data_from_func3 = func3();// value returned from func3 stored in data_from_func3 and print statement from func3 executed normally
-print('function 3 => $data_from_func3');
+int dataFromFunc3 = func3();// value returned from func3 stored in data_from_func3 and print statement from func3  executed normally
+print('function 3 => $dataFromFunc3');
 
 print(func4("Anna", 20));
 //     or
 String data_from_func4  = func4("Haritha", 23); // value returned from func4 stored in data_from_func4
 print('function 4 => $data_from_func4');
+
+print('div out => ${division(100, 10)}');
 }
 
 ///user defined function
@@ -32,5 +34,13 @@ int func3(){// this  function will return integer values only and can print any 
 //4. function with return type and with arguments (parameterised function with return type)
 String func4(String name, int age){
   String data = 'my name is $name , i am $age yrs old';
+  //return  'my name is $name , i am $age yrs old';
   return data ;    // cannot return more than one value
+}
+
+///example
+double division(int a, int b){
+  double result = a/b;
+  return result;
+  //or return a/b;
 }
