@@ -28,5 +28,8 @@ void main(){
   print('intersection = ${s1.intersection(s2)}');
   print('difference   = ${s2.difference(s1)}');
 
+  for(int i =0 ; i<s7.length ;i++){
+    print(s7.elementAt(i));    // for list listname[i];
+  }
 
 }
