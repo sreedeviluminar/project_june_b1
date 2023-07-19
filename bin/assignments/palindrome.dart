@@ -8,12 +8,23 @@ void main(){
   while(num > 0){
     rem = num % 10;
     sum = (sum * 10) + rem;
-    num = num~/10 ;
+    num = num~/10 ;  // 123 ~/ 10 = 12
   }
   if(sum == temp){
     print('Number is palindrome');
   }else{
     print('not a palindrome number');
+  }
+
+  String s = "1234";
+  var rev = s.split("").reversed.join();
+  print(rev);
+
+  if(s==rev){
+    print('Palindrome number');
+  }else{
+    print('Not Palindrome number');
+
   }
 }
 
